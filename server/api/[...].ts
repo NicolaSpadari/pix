@@ -1,8 +1,8 @@
 import sharp from "sharp";
 
-const getTitle = (w: number, h: number, t?: string) => {
-	if (t) return t;
-	return `${w}x${h}`
+const getTitle = (width: number, height: number, text?: string) => {
+	if (text && text !== "") return text;
+	return `${width} x ${height}`
 }
 
 export default defineEventHandler(async (event) => {
@@ -20,13 +20,12 @@ export default defineEventHandler(async (event) => {
 
 	const svg = `
         <svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
-            <rect width="100%" height="100%" fill="#fff" />
-            <text x="50%" y="50%" font-size="20" font-family="Arial, sans-serif" 
-                dominant-baseline="middle" text-anchor="middle" fill="${text}">
+            <rect width="100%" height="100%" fill="#ccc" />
+            <text x="50%" y="53%" font-size="35" font-family="Arial, sans-serif" dominant-baseline="middle" text-anchor="middle" fill="#9c9c9c">
                 ${getTitle(width, height, text?.toString())}
             </text>
         </svg>
     `;
 
-    return sharp(Buffer.from(svg)).png();
+    return sharp(Buffer.from(svg)).webp();
 })

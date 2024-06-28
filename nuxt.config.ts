@@ -1,7 +1,5 @@
 export default defineNuxtConfig({
 	modules: [
-		// "nuxt-security",
-		// "nuxt-zero-js",
 		"@nuxt/eslint",
 	],
 	app: {
