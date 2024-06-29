@@ -1,19 +1,26 @@
-<h1 align="center">Personal Nuxt 3 template</h1>
-<hr />
+<h1 align="center">Pix</h1>
+<p align="center">Generate placeholder images on the fly</p>
 
 ## Usage
 
 Clone to local:
 ```sh
-$ npx degit NicolaSpadari/nuxt-template my-nuxt-app
+$ npx degit NicolaSpadari/pix my-pix-app
 ```
 
 Install dependencies:
 ```sh
-$ ni # or pnpm install
+$ pnpm install
 ```
 
 Run project:
 ```sh
-$ nr dev # or pnpm run dev
+$ pnpm run dev
 ```
+
+Generate image:
+
+- Visit `https://mywebsite.com/<width>x<height>?text=SomeText`
+- Text is optional
+- Height can be omitted
+- By default if not parameters are provided, default width and height is 500
