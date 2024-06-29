@@ -30,7 +30,7 @@ export default defineEventHandler(async (event) => {
 				</style>
 			</defs>
             <rect width="100%" height="100%" fill="#ccc" />
-            <text x="50%" y="53%" font-size="50" class="inter" dominant-baseline="middle" text-anchor="middle" fill="#9c9c9c">
+            <text x="50%" y="53%" font-size="35" class="inter" dominant-baseline="middle" text-anchor="middle" fill="#9c9c9c">
                 ${getTitle(width, height, text?.toString())}
             </text>
         </svg>
