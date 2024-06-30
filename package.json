@@ -18,14 +18,14 @@
 		"postinstall": "nuxt prepare",
 		"lint": "eslint . --fix"
 	},
+	"dependencies": {
+		"sharp": "^0.33.4"
+	},
 	"devDependencies": {
 		"@antfu/eslint-config": "^2.21.2",
 		"@nuxt/eslint": "^0.3.13",
 		"eslint": "8.57.0",
 		"nuxt": "^3.12.2",
 		"typescript": "^5.5.2"
-	},
-	"dependencies": {
-		"sharp": "^0.33.4"
 	}
 }

@@ -1,5 +1,7 @@
 import sharp from "sharp";
 
+process.env.FONTCONFIG_PATH = "/var/task/fonts";
+
 const getTitle = (width: number, height: number, text?: string) => {
 	if (text && text !== "")
 		return text;
@@ -21,16 +23,8 @@ export default defineEventHandler(async (event) => {
 
 	const svg = `
         <svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
-			<defs>
-				<style>
-					@import url('https://fonts.googleapis.com/css2?family=Inter');
-					.inter{
-						font-family: Inter;
-					}
-				</style>
-			</defs>
             <rect width="100%" height="100%" fill="#ccc" />
-            <text x="50%" y="53%" font-size="35" class="inter" dominant-baseline="middle" text-anchor="middle" fill="#9c9c9c">
+            <text x="50%" y="53%" font-size="35" font-family="Helvetica" dominant-baseline="middle" text-anchor="middle" fill="#9c9c9c">
                 ${getTitle(width, height, text?.toString())}
             </text>
         </svg>
