@@ -1,6 +1,6 @@
 import sharp from "sharp";
 
-process.env.FONTCONFIG_PATH = "/var/task/fonts";
+process.env.FONTCONFIG_PATH = "/var/task/functions/server";
 
 const getTitle = (width: number, height: number, text?: string) => {
 	if (text && text !== "")
