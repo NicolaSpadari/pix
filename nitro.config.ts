@@ -5,6 +5,6 @@ export default defineNitroConfig({
 		"/**": {
 			cache: process.env.NODE_ENV === "production" ? { maxAge: 60 } : undefined,
 			cors: true
-		},
+		}
 	}
 });

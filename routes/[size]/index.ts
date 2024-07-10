@@ -1,18 +1,10 @@
 import sharp from "sharp";
-
-process.env.FONTCONFIG_PATH = "/var/task/fonts";
-
-const getTitle = (width: number, height: number, text?: string) => {
-	if (text && text !== "")
-		return text;
-	return `${width} x ${height}`;
-};
+import { icons } from "@iconify-json/tabler";
 
 export default eventHandler(async (event) => {
-	const size = event.context.params.size || "500";
-	const { text } = getQuery(event);
+	const size = event.context.params.size || "500x500";
 
-	let width, height;
+	let width: number, height: number;
 
 	if (size.includes("x")) {
 		width = Number(size.split("x")[0]);
@@ -21,14 +13,29 @@ export default eventHandler(async (event) => {
 		width = height = Number(size);
 	}
 
+	const printChars = () => {
+		const res = [];
+
+		size.split("").forEach((char, charIndex) => {
+			if (!Number.isNaN(Number(char))) {
+				res.push(`<g transform="translate(${charIndex * 20}, 0)">${icons.icons[`number-${char}`].body}</g>`);
+			} else {
+				res.push(`<g transform="translate(${charIndex * 20}, 0)">${icons.icons[`letter-${char}`].body}</g>`);
+			}
+		});
+
+		return res;
+	};
+
 	const svg = `
         <svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
             <rect width="100%" height="100%" fill="#ccc" />
-            <text x="50%" y="53%" font-size="35" font-family="'Helvetica'" dominant-baseline="middle" text-anchor="middle" fill="#9c9c9c">
-                ${getTitle(width, height, text?.toString())}
-            </text>
+			<g transform="translate(${(width / 2) - (size.length * 10)} ${(height / 2) - 20})">
+				${printChars().map((char) => char)}
+			</g>
         </svg>
     `;
 
+	// eslint-disable-next-line node/prefer-global/buffer
 	return sharp(Buffer.from(svg)).webp();
 });
