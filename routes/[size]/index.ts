@@ -8,8 +8,8 @@ const getTitle = (width: number, height: number, text?: string) => {
 	return `${width} x ${height}`;
 };
 
-export default defineEventHandler(async (event) => {
-	const size = event.context.params?._ || "500";
+export default eventHandler(async (event) => {
+	const size = event.context.params.size || "500";
 	const { text } = getQuery(event);
 
 	let width, height;

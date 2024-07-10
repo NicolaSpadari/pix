@@ -3,29 +3,24 @@
 	"type": "module",
 	"version": "1.0.0",
 	"private": true,
-	"packageManager": "pnpm@9.4.0",
+	"packageManager": "pnpm@9.5.0",
 	"description": "Generate image placeholder on the fly",
 	"author": "Nicola Spadari",
 	"engines": {
 		"node": ">=20"
 	},
 	"scripts": {
-		"dev": "nuxt dev",
-		"build": "nuxt build",
-		"generate": "nuxt generate",
-		"preview": "nuxt preview",
-		"preinstall": "npx only-allow pnpm",
-		"postinstall": "nuxt prepare",
-		"lint": "eslint . --fix"
+		"prepare": "nitropack prepare",
+		"build": "nitropack build",
+		"dev": "nitropack dev"
 	},
 	"dependencies": {
 		"sharp": "^0.33.4"
 	},
 	"devDependencies": {
-		"@antfu/eslint-config": "^2.21.2",
-		"@nuxt/eslint": "^0.3.13",
-		"eslint": "8.57.0",
-		"nuxt": "^3.12.2",
-		"typescript": "^5.5.2"
+		"@antfu/eslint-config": "^2.22.0",
+		"eslint": "9.6.0",
+		"nitropack": "^2.9.7",
+		"typescript": "^5.5.3"
 	}
 }

@@ -1,13 +1,3 @@
 {
-	"extends": "./.nuxt/tsconfig.json",
-	"compilerOptions": {
-		"target": "ESNext",
-		"module": "ESNext",
-		"strict": true
-	},
-	"include": [
-		".nuxt/nuxt.d.ts",
-		"env.d.ts",
-		"**/*"
-	]
+	"extends": "./.nitro/types/tsconfig.json"
 }
