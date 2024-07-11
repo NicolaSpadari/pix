@@ -1,5 +1,11 @@
 <h1 align="center">Pix</h1>
+
+<p align="center">
+	<img src="public/logo.png" width="150" />
+</p>
 <p align="center">Generate placeholder images on the fly</p>
+
+#### Powered by [Nitropack](https://nitro.unjs.io)
 
 ## Usage
 
@@ -18,8 +24,11 @@ Run project:
 $ pnpm run dev
 ```
 
-Generate image:
+Example image:
 
-- Visit `https://mywebsite.com/<width>x<height>`
+- Visit `https://mypixdomain.com/<width>x<height>`
 - Height can be omitted
 - If no parameters are provided, default width and height is 500
+- Served image is `.webp`
+
+<img src="public/demo.jpeg" width="200" height="200" />
