@@ -20,7 +20,6 @@ $ pnpm run dev
 
 Generate image:
 
-- Visit `https://mywebsite.com/<width>x<height>?text=SomeText`
-- Text is optional
+- Visit `https://mywebsite.com/<width>x<height>`
 - Height can be omitted
-- By default if not parameters are provided, default width and height is 500
+- If no parameters are provided, default width and height is 500
