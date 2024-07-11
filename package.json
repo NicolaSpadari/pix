@@ -19,7 +19,6 @@
 	},
 	"devDependencies": {
 		"@antfu/eslint-config": "^2.22.0",
-		"@iconify-json/tabler": "^1.1.117",
 		"eslint": "9.6.0",
 		"nitropack": "^2.9.7",
 		"typescript": "^5.5.3"

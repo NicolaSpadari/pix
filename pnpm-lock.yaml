@@ -15,9 +15,6 @@ importers:
       '@antfu/eslint-config':
         specifier: ^2.22.0
         version: 2.22.0(@vue/compiler-sfc@3.4.31)(eslint@9.6.0)(typescript@5.5.3)
-      '@iconify-json/tabler':
-        specifier: ^1.1.117
-        version: 1.1.117
       eslint:
         specifier: 9.6.0
         version: 9.6.0
@@ -126,8 +123,8 @@ packages:
     resolution: {integrity: sha512-I238eDtOolvCuvtxrnqtlBaw0BwdQuYqK7eA6XIonicMdOOOb75mqdIzkGDUbS04+1Di007rgm9snFRNeVrOog==}
     engines: {node: '>=16'}
 
-  '@es-joy/jsdoccomment@0.45.0':
-    resolution: {integrity: sha512-U8T5eXLkP78Sr12rR91494GhlEgp8jqs7OaUHbdUffADxU1JQmKjZm5uSyAEGv2oolDMJ+wce7yylfnnwOevtA==}
+  '@es-joy/jsdoccomment@0.46.0':
+    resolution: {integrity: sha512-C3Axuq1xd/9VqFZpW4YAzOx5O9q/LP46uIQy/iNDpHG3fmPa6TBtvfglMCs3RBiBxAIi0Go97r8+jvTt55XMyQ==}
     engines: {node: '>=16'}
 
   '@esbuild/aix-ppc64@0.20.2':
@@ -305,12 +302,6 @@ packages:
   '@humanwhocodes/retry@0.3.0':
     resolution: {integrity: sha512-d2CGZR2o7fS6sWB7DG/3a95bGKQyHMACZ5aW8qGkkqQpUoZV6C0X7Pc7l4ZNMZkfNBf4VWNe9E1jRsf0G146Ew==}
     engines: {node: '>=18.18'}
-
-  '@iconify-json/tabler@1.1.117':
-    resolution: {integrity: sha512-RiFbco9Qo0X7jlRFlD2sq9kwLZZ5JFOyacGKi9nzdnao9tV/qFFh1930JDXFay/CTs/jr7+RYPsI+wGFg0jfsA==}
-
-  '@iconify/types@2.0.0':
-    resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
 
   '@img/sharp-darwin-arm64@0.33.4':
     resolution: {integrity: sha512-p0suNqXufJs9t3RqLBO6vvrgr5OhgbWp76s5gTRvdmxmuv9E1rcaqGUsl3l4mKVmXPkTkTErXediAui4x+8PSA==}
@@ -1328,8 +1319,8 @@ packages:
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  electron-to-chromium@1.4.823:
-    resolution: {integrity: sha512-4h+oPeAiGQOHFyUJOqpoEcPj/xxlicxBzOErVeYVMMmAiXUXsGpsFd0QXBMaUUbnD8hhSfLf9uw+MlsoIA7j5w==}
+  electron-to-chromium@1.4.825:
+    resolution: {integrity: sha512-OCcF+LwdgFGcsYPYC5keEEFC2XT0gBhrYbeGzHCx7i9qRFbzO/AqTmc/C/1xNhJj+JA7rzlN7mpBuStshh96Cg==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -1427,8 +1418,8 @@ packages:
     peerDependencies:
       eslint: ^8.56.0 || ^9.0.0-0
 
-  eslint-plugin-jsdoc@48.6.0:
-    resolution: {integrity: sha512-UsOdFYWeyYaiGW1OzJaKvRpb88JPF0HGpDkmMDvhfWbTGu3B4TYKhGH3cPGiRjMDxKPA3fJ/+tL823argNxOkA==}
+  eslint-plugin-jsdoc@48.7.0:
+    resolution: {integrity: sha512-5oiVf7Y+ZxGYQTlLq81X72n+S+hjvS/u0upAdbpPEeaIZILK3MKN8lm/6QqKioBjm/qZ0B5XpMQUtc2fUkqXAg==}
     engines: {node: '>=18'}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0 || ^9.0.0
@@ -1926,9 +1917,8 @@ packages:
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
-  jackspeak@3.4.2:
-    resolution: {integrity: sha512-qH3nOSj8q/8+Eg8LUPOq3C+6HWkpUioIjDsq1+D4zY91oZvpPttw8GwtF1nReRYKXl+1AORyFqtm2f5Q1SB6/Q==}
-    engines: {node: 14 >=14.21 || 16 >=16.20 || >=18}
+  jackspeak@3.4.3:
+    resolution: {integrity: sha512-OGlZQpz2yfahA/Rd1Y8Cd9SIEsqvXkLVoSw/cgwhnhFMDbsQFeZYoJJ7bIZBS9BcamUW96asq/npPWugM+RQBw==}
 
   jiti@1.21.6:
     resolution: {integrity: sha512-2yTgeWTWzMWkHu6Jp9NKgePDaYHbntiwvYuuJLbbN9vl7DC9DvXKOB2BC3ZZ92D3cvV/aflH0osDfwpHepQ53w==}
@@ -2709,8 +2699,8 @@ packages:
     resolution: {integrity: sha512-DZ4yORTwrbTj/7MZYq2w+/ZFdI6OZ/f9SFHR+71gIVUZhOQPHzVCLpvRnPgyaMpfWxxk/4ONva3GQSyNIKRv6A==}
     engines: {node: '>=10'}
 
-  terser@5.31.1:
-    resolution: {integrity: sha512-37upzU1+viGvuFtBo9NPufCb9dwM0+l9hMxYyWfBA+fbwrPqNJAhbZ6W47bBFnZHKHTUBnMvi87434qq+qnxOg==}
+  terser@5.31.2:
+    resolution: {integrity: sha512-LGyRZVFm/QElZHy/CPr/O4eNZOZIzsrQ92y4v9UJe/pFJjypje2yI3C2FmPtvUEnhadlSbmG2nXtdcjHOjCfxw==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -2985,7 +2975,7 @@ snapshots:
       eslint-plugin-command: 0.2.3(eslint@9.6.0)
       eslint-plugin-eslint-comments: 3.2.0(eslint@9.6.0)
       eslint-plugin-import-x: 0.5.3(eslint@9.6.0)(typescript@5.5.3)
-      eslint-plugin-jsdoc: 48.6.0(eslint@9.6.0)
+      eslint-plugin-jsdoc: 48.7.0(eslint@9.6.0)
       eslint-plugin-jsonc: 2.16.0(eslint@9.6.0)
       eslint-plugin-markdown: 5.0.0(eslint@9.6.0)
       eslint-plugin-n: 17.9.0(eslint@9.6.0)
@@ -3076,10 +3066,8 @@ snapshots:
       esquery: 1.6.0
       jsdoc-type-pratt-parser: 4.0.0
 
-  '@es-joy/jsdoccomment@0.45.0':
+  '@es-joy/jsdoccomment@0.46.0':
     dependencies:
-      '@types/eslint': 8.56.10
-      '@types/estree': 1.0.5
       comment-parser: 1.4.1
       esquery: 1.6.0
       jsdoc-type-pratt-parser: 4.0.0
@@ -3191,12 +3179,6 @@ snapshots:
   '@humanwhocodes/module-importer@1.0.1': {}
 
   '@humanwhocodes/retry@0.3.0': {}
-
-  '@iconify-json/tabler@1.1.117':
-    dependencies:
-      '@iconify/types': 2.0.0
-
-  '@iconify/types@2.0.0': {}
 
   '@img/sharp-darwin-arm64@0.33.4':
     optionalDependencies:
@@ -3470,7 +3452,7 @@ snapshots:
     dependencies:
       serialize-javascript: 6.0.2
       smob: 1.5.0
-      terser: 5.31.1
+      terser: 5.31.2
     optionalDependencies:
       rollup: 4.18.1
 
@@ -3938,7 +3920,7 @@ snapshots:
   browserslist@4.23.2:
     dependencies:
       caniuse-lite: 1.0.30001641
-      electron-to-chromium: 1.4.823
+      electron-to-chromium: 1.4.825
       node-releases: 2.0.14
       update-browserslist-db: 1.1.0(browserslist@4.23.2)
 
@@ -4160,7 +4142,7 @@ snapshots:
 
   ee-first@1.1.1: {}
 
-  electron-to-chromium@1.4.823: {}
+  electron-to-chromium@1.4.825: {}
 
   emoji-regex@8.0.0: {}
 
@@ -4284,9 +4266,9 @@ snapshots:
       - supports-color
       - typescript
 
-  eslint-plugin-jsdoc@48.6.0(eslint@9.6.0):
+  eslint-plugin-jsdoc@48.7.0(eslint@9.6.0):
     dependencies:
-      '@es-joy/jsdoccomment': 0.45.0
+      '@es-joy/jsdoccomment': 0.46.0
       are-docs-informative: 0.0.2
       comment-parser: 1.4.1
       debug: 4.3.5
@@ -4658,7 +4640,7 @@ snapshots:
   glob@10.4.5:
     dependencies:
       foreground-child: 3.2.1
-      jackspeak: 3.4.2
+      jackspeak: 3.4.3
       minimatch: 9.0.5
       minipass: 7.1.2
       package-json-from-dist: 1.0.0
@@ -4874,7 +4856,7 @@ snapshots:
 
   isexe@2.0.0: {}
 
-  jackspeak@3.4.2:
+  jackspeak@3.4.3:
     dependencies:
       '@isaacs/cliui': 8.0.2
     optionalDependencies:
@@ -5758,7 +5740,7 @@ snapshots:
       mkdirp: 1.0.4
       yallist: 4.0.0
 
-  terser@5.31.1:
+  terser@5.31.2:
     dependencies:
       '@jridgewell/source-map': 0.3.6
       acorn: 8.12.1
